@@ -1,0 +1,25 @@
+{% block doc %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Language" content="pt-br, en, fr, it"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+{% block html %}
+<html>
+<body>
+{% block add_user %}
+{% endblock %}
+{% block table %}
+{% endblock %}
+{% block new_user %}
+{% endblock %}
+</body>
+{% endblock html %}
+</html>
+{% endblock doc %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block new_user %}
+
+<div class="container">
+	<div class="table-wrapper">
+		<div class="table-title">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2>User <b>{{user.username}}</b> {{message}}</h2>
+				</div>
+				<div class="col-sm-6">
+					<form action="/users" method="GET">					
+						<button type="submit" class="btn btn-info">List of Users</button>		
+					</form>
+				</div>
+			</div>
+		</div>
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th>Email</th>
+					<th>Address</th>
+					<th>Phone</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>{{user.username}}</td>
+					<td>{{user.email}}</td>
+					<td>{{user.address}}</td>
+					<td>{{user.phone}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}

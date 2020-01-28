@@ -1,0 +1,1 @@
+Flask CRUD web app using SQLAlchemy with MySQL
